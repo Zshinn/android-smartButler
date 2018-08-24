@@ -1,5 +1,6 @@
 package net.zengxin.easytalker.smartbutler;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.support.design.widget.FloatingActionButton;
 import android.support.design.widget.TabLayout;
@@ -7,17 +8,20 @@ import android.support.v4.app.Fragment;
 import android.support.v4.app.FragmentPagerAdapter;
 import android.support.v4.view.ViewPager;
 import android.support.v7.app.AppCompatActivity;
+import android.view.View;
 
 import net.zengxin.easytalker.smartbutler.fragment.ButlerFragment;
 import net.zengxin.easytalker.smartbutler.fragment.GirlFragment;
 import net.zengxin.easytalker.smartbutler.fragment.UserFragment;
 import net.zengxin.easytalker.smartbutler.fragment.WechatFragment;
+import net.zengxin.easytalker.smartbutler.ui.SettingActivity;
 
 import java.util.ArrayList;
 import java.util.List;
 
 import butterknife.BindView;
 import butterknife.ButterKnife;
+import butterknife.OnClick;
 
 public class MainActivity extends AppCompatActivity {
 
@@ -32,7 +36,8 @@ public class MainActivity extends AppCompatActivity {
     //Fragment
     private List<Fragment> mFragment;
     //悬浮窗
-    private FloatingActionButton fab_setting;
+    @BindView(R.id.fb_setting)
+    public FloatingActionButton fb_setting;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -66,16 +71,21 @@ public class MainActivity extends AppCompatActivity {
         //设置viewpager的大小
         mViewPager.setOffscreenPageLimit(mFragment.size());
 
+        fb_setting.setVisibility(View.GONE);
         //mViewPager滑动监听
         mViewPager.addOnPageChangeListener(new ViewPager.OnPageChangeListener() {
             @Override
             public void onPageScrolled(int position, float positionOffset, int positionOffsetPixels) {
-
             }
 
             @Override
             public void onPageSelected(int position) {
-
+               // Log.d("TAG","Position:"+position);
+                if(position==0){
+                    fb_setting.setVisibility(View.GONE);
+                }else {
+                    fb_setting.setVisibility(View.VISIBLE);
+                }
             }
 
             @Override
@@ -108,6 +118,11 @@ public class MainActivity extends AppCompatActivity {
         //绑定
         mTabLayout.setupWithViewPager(mViewPager);
 
+    }
+
+    @OnClick(R.id.fb_setting)
+    public void ClickFB() {
+        startActivity(new Intent(this, SettingActivity.class));
     }
 
 }
