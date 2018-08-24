@@ -12,5 +12,7 @@ public class BaseApplication extends Application {
     @Override
     public void onCreate() {
         super.onCreate();
+        //bugly
+        //CrashReport.initCrashReport(getApplicationContext(), "注册时申请的APPID", false);
     }
 }
