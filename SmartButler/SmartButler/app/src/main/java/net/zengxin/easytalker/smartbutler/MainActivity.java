@@ -50,6 +50,7 @@ public class MainActivity extends AppCompatActivity {
 
         initData();
         initView();
+
     }
 
     private void initData() {
@@ -80,7 +81,7 @@ public class MainActivity extends AppCompatActivity {
 
             @Override
             public void onPageSelected(int position) {
-               // Log.d("TAG","Position:"+position);
+               // Log.i("TAG","Position:"+position);
                 if(position==0){
                     fb_setting.setVisibility(View.GONE);
                 }else {
