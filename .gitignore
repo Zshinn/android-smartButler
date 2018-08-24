@@ -1,0 +1,12 @@
+SmartButler/SmartButler/.idea/
+SmartButler/SmartButler/app/proguard-rules.pro
+SmartButler/SmartButler/gradlew
+*.bat
+SmartButler/SmartButler/settings.gradle
+*.properties
+*.jar
+SmartButler/SmartButler/build.gradle
+*.gradle
+SmartButler/SmartButler/app/src/androidTest/java/net/zengxin/easytalker/smartbutler/ExampleInstrumentedTest.java
+*.xml
+*.png
