@@ -25,4 +25,6 @@
     <string name="text_tost_empty">input empty</string>
     <string name="text_nothing">nothing</string>
     <string name="text_now_login">logining</string>
+    <string name="text_courier_company">快递公司</string>
+    <string name="text_courier_number">快递单号</string>
 </resources>

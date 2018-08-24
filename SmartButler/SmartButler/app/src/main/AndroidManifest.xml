@@ -38,10 +38,13 @@
             android:label="@string/text_setting" />
         <activity android:name=".MainActivity" />
         <activity android:name=".ui.GuideActivity" />
-        <activity android:name=".ui.LoginActivity"
-            android:label="@string/text_login"/>
-        <activity android:name=".ui.RegisteredActivity"
-            android:label="@string/text_register"/>
+        <activity
+            android:name=".ui.LoginActivity"
+            android:label="@string/text_login" />
+        <activity
+            android:name=".ui.RegisteredActivity"
+            android:label="@string/text_register" />
+        <activity android:name=".ui.CourierActivity"></activity>
     </application>
 
 </manifest>

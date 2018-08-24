@@ -22,5 +22,7 @@
     <string name="text_tost_empty">输入框不可为空</string>
     <string name="text_nothing">这个人很懒，什么也没留下</string>
     <string name="text_now_login">正在登陆</string>
+    <string name="text_courier_company">快递公司</string>
+    <string name="text_courier_number">快递单号</string>
 
 </resources>

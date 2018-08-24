@@ -10,15 +10,16 @@
         android:id="@+id/tv_courier"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_margin="15dp"
+        android:layout_margin="10dp"
         android:text="物流查询"
-        android:textSize="20dp" />
+        android:textSize="18dp" />
 
     <View
         android:layout_width="match_parent"
         android:layout_height="1dp"
         android:layout_marginLeft="10dp"
         android:layout_marginRight="10dp"
+        android:layout_marginBottom="30dp"
         android:alpha="0.5"
         android:background="@color/colorPrimary" />
 
@@ -26,9 +27,9 @@
         android:id="@+id/tv_phone"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_margin="15dp"
+        android:layout_margin="10dp"
         android:text="归属地查询"
-        android:textSize="20dp" />
+        android:textSize="18dp" />
 
     <View
         android:layout_width="match_parent"
