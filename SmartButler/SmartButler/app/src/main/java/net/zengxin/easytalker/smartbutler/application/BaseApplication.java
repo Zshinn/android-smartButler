@@ -14,5 +14,6 @@ public class BaseApplication extends Application {
         super.onCreate();
         //bugly
         //CrashReport.initCrashReport(getApplicationContext(), "注册时申请的APPID", false);
+        //Bmob.initialize(this, StaticClass.BMOB_APP_ID);
     }
 }

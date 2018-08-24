@@ -12,4 +12,6 @@ public class StaticClass {
     //判断程序是否是第一次运行
     public static final String SHARE_IS_FIRST = "isFirst";
 
+    public static final String BMOB_APP_ID="995397cc67f682081490f113c3f4cd61";
+
 }

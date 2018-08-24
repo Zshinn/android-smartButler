@@ -1,0 +1,28 @@
+<resources>
+    <string name="app_name">SmartButler</string>
+    <string name="title_butler">SmartButler</string>
+    <string name="title_girl">Girls</string>
+    <string name="title_user">UserCenter</string>
+    <string name="title_wechat">Wechat</string>
+    <string name="text_setting">setting</string>
+    <string name="text_keep_word">Remember</string>
+    <string name="text_login">login</string>
+    <string name="text_register">register</string>
+    <string name="text_forget_password">Forget</string>
+    <string name="text_userName">userName</string>
+    <string name="text_age">age</string>
+    <string name="text_desc">desc</string>
+    <string name="text_boy">boy</string>
+    <string name="text_girl">girl</string>
+    <string name="text_password">password</string>
+    <string name="text_password_again">password again</string>
+    <string name="text_email">email</string>
+    <string name="text_register_remind">need email register</string>
+    <string name="text_registered">registered</string>
+    <string name="text_registered_successful">registered successful</string>
+    <string name="text_registered_failure">registered failure</string>
+    <string name="text_two_input_not_consistent">two input not consistent</string>
+    <string name="text_tost_empty">input empty</string>
+    <string name="text_nothing">nothing</string>
+    <string name="text_now_login">logining</string>
+</resources>
